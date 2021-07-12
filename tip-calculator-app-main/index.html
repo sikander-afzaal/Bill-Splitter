@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <div class="top__left">
+            <p>Bill</p>
+            <div class="input__div">
+              <img class="dollar" src="./images/icon-dollar.svg" alt="" />
+              <input id="bill" type="text" placeholder="0" />
+            </div>
+            <p class="error__bill">First character should be positive integer</p>
+          </div>
+          <div class="middle__left">
+            <h1 class="heading">Select Tip %</h1>
+            <div class="buttons">
+              <p class="percentage">5%</p>
+              <p class="percentage">10%</p>
+              <p class="percentage">15%</p>
+              <p class="percentage">25%</p>
+              <p class="percentage">50%</p>
+              <input type="text" class="percentage__input" placeholder="Custom">
+            </div>
+          </div>
+          <div class="bottom__left">
+            <p>Number of People</p>
+            <div class="input__div">
+              <img src="./images/icon-person.svg" alt="" />
+              <input id="people" type="text" placeholder="0" />
+            </div>
+            <p class="error__person">Should be greater than zero</p>
+          </div>
+        </div>
+        <div class="right">
+          <div>
+          <div class="top__right">
+            <div class="text">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <p class="money" id="tip__amount">$0.00</p>
+          </div>
+          <div class="top__right">
+            <div class="text">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <p class="money" id="total">$0.00</p>
+          </div>
+          </div>
+          <button class="reset disabled">RESET</button>
+        </div>
+      </div>
+    </div>
+    <!-- 
+  Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="./js.js"></script>
+  </body>
+</html>
